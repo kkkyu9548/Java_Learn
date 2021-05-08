@@ -36,6 +36,10 @@ public class Main {
         // escape
         System.out.println("Hello \"World\"");
 
+        System.out.println("Hello World".length()); // 11
+        //Hello, kyu ... kyu ... kyu ... bye.
+        System.out.println("Hello leezche ... bye".replace("leezche", "egoing"));
+        System.out.println("Hello [[[name]]] ... bye".replace("[[[name]]]", "egoing"));
 
 
 //        souf
