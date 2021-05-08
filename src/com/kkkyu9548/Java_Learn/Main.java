@@ -25,6 +25,19 @@ public class Main {
         System.out.println(Math.floor(Math.PI));    //  3.0
         System.out.println(Math.ceil(Math.PI));     //  4.0
 
+        // Character & String
+//        System.out.println('HelloWorld');   //Character(문자)
+        System.out.println("HelloWorld");   //String(문자열)
+        System.out.println("Hello "
+            + "World");
+
+        // new line
+        System.out.println("Hello \nWorld");
+        // escape
+        System.out.println("Hello \"World\"");
+
+
+
 //        souf
         System.out.printf("six & 6");//String six & 6 문자열
 //        soutm
