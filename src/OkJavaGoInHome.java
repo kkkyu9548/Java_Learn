@@ -9,18 +9,18 @@ public class OkJavaGoInHome {
         String id = "JAVA APT 901";
 
 //        Elevator call
-        Eleavtor myElevator = new Eleavtor("JAVA APT 901");
+        Eleavtor myElevator = new Eleavtor(id);
         myElevator.callForUp(1);
 
 //        Security off
-        Security mySecurity = new Security("JAVA APT 901");
+        Security mySecurity = new Security(id);
         mySecurity.off();
 
 //        Light on
-        Lighting hallLamp = new Lighting("JAVA APT 901 / Hall Lamp");
+        Lighting hallLamp = new Lighting(id+" / Hall Lamp");
         hallLamp.on();
-        Lighting floorLamp = new Lighting("JAVA APT 901 / Hall Lamp");
-        hallLamp.off();
+        Lighting floorLamp = new Lighting(id+" / floor Lamp");
+        hallLamp.on();
 
     }
 }
