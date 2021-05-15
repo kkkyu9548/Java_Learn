@@ -3,7 +3,7 @@ package com.kkkyu9548.Java_Learn;
 public class ScopeDemo {
 
     static void a() {
-        int i = 0;
+        int i = 0;  //지역변수 선언
     }
 
     public static void main(String[] args) {
