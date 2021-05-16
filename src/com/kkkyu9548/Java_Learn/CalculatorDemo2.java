@@ -1,6 +1,6 @@
 package com.kkkyu9548.Java_Learn;
 
-class Calculatore {
+class Calculatorss {
     int left, right;
 
     public void setOprands(int left, int right) {
@@ -17,7 +17,7 @@ class Calculatore {
     }
 }
 
-class SubstractionableCalculator extends Calculatore {
+class SubstractionableCalculator extends Calculatorss {
     public void substract() {
         System.out.println(this.left - this.right);
     }
