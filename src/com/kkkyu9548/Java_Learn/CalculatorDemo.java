@@ -23,6 +23,10 @@ class SubstractionableCalculator extends Calculator {
         System.out.println("실행 결과는 " +(this.left + this.right)+"입니다.");
     }
 
+    public int avg() {
+        return (this.left + this.right)/2;
+    }
+
     public void substract() {
         System.out.println(this.left - this.right);
     }
