@@ -24,7 +24,7 @@ class SubstractionableCalculator extends Calculator {
     }
 
     public int avg() {
-        return ((this.left + this.right) / 2);
+        return super.avg();
     }
 
     public void substract() {
@@ -37,7 +37,7 @@ public class CalculatorDemo {
         SubstractionableCalculator c1 = new SubstractionableCalculator();
         c1.setOprands(10, 20);
         c1.sum();
-        c1.avg();
+        System.out.println("실행 결과는" + c1.avg());
         c1.substract();
     }
 }
