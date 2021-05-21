@@ -1,43 +1,36 @@
 package com.kkkyu9548.Java_Learn;
 
 class Calculator{
-    int left, right;
-    int third = 0;
+    int[] oprands;
 
-    public void setOprands(int left, int right){
-        System.out.println("setOprands(int left, int right)");
-        this.left = left;
-        this.right = right;
-    }
-
-    public void setOprands(int left, int right, int third){
-        System.out.println("setOprands(int left, int right, int third)");
-        this.left = left;
-        this.right = right;
-        this.third = third;
+    public void setOprands(int[] oprands){
+        this.oprands = oprands;
     }
 
     public void sum(){
-        System.out.println(this.left+this.right+this.third);
+        int total = 0;
+        for(int value : this.oprands){
+            total += value;
+        }
+        System.out.println(total);
     }
 
     public void avg(){
-        System.out.println((this.left+this.right+this.third)/3);
+        int total = 0;
+        for(int value : this.oprands){
+            total += value;
+        }
+        System.out.println(total/this.oprands.length);
     }
 }
-
 public class CalculatorDemo {
-
     public static void main(String[] args) {
-
         Calculator c1 = new Calculator();
-        c1.setOprands(10, 20);
+        c1.setOprands(new int[]{10,20});
         c1.sum();
         c1.avg();
-        c1.setOprands(10, 20, 30);
+        c1.setOprands(new int[]{10,20,30});
         c1.sum();
         c1.avg();
-
     }
-
 }
