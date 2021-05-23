@@ -1,7 +1,14 @@
 package com.kkkyu9548.Java_Learn;
 
-class CalculatorDummy{
-    public void setOprands(int first, int second, int third){}
+interface Calculatable {
+    public void setOprands(int first, int second, int third) ;
+    public int sum();
+    public int avg();
+}
+
+class CalculatorDummy implements Calculatable{
+    public void setOprands(int first, int second, int third){
+    }
     public int sum(){
         return 60;
     }
@@ -10,9 +17,9 @@ class CalculatorDummy{
     }
 }
 public class CalculatorConsumer {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         CalculatorDummy c = new CalculatorDummy();
-        c.setOprands(10,20,30);
+        c.setOprands(10, 20, 30);
         System.out.println(c.sum()+c.avg());
     }
 }
