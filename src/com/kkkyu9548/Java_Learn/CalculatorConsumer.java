@@ -1,25 +1,31 @@
 package com.kkkyu9548.Java_Learn;
 
-interface Calculatable {
-    public void setOprands(int first, int second, int third) ;
-    public int sum();
-    public int avg();
+interface I1{
+    public void x();
 }
 
-class CalculatorDummy implements Calculatable{
-    public void setOprands(int first, int second, int third){
-    }
-    public int sum(){
-        return 60;
-    }
-    public int avg(){
-        return 20;
-    }
+interface I2{
+    public void z();
 }
-public class CalculatorConsumer {
-    public static void main(String[] args) {
-        CalculatorDummy c = new CalculatorDummy();
-        c.setOprands(10, 20, 30);
-        System.out.println(c.sum()+c.avg());
-    }
+
+class A implements I1, I2{
+    public void x(){}
+    public void z(){}
+}
+
+interface I3{
+    public void x();
+}
+
+interface I4 extends I3{
+    public void z();
+}
+
+class B implements I4{
+    public void x(){}
+    public void z(){}
+}
+
+interface I5{
+    private void x();
 }
