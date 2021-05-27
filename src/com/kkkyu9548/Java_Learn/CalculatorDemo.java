@@ -12,7 +12,10 @@ class Calculator{
             System.out.print(this.left/this.right);
             System.out.print(" 입니다.");
         } catch(Exception e){
-            System.out.println("오류가 발생했습니다 : "+e.getMessage());
+            System.out.println("\n\ne.getMessage()\n"+e.getMessage());
+            System.out.println("\n\ne.toString()\n"+e.toString());
+            System.out.println("\n\ne.printStackTrace()");
+            e.printStackTrace();
         }
     }
 }
@@ -21,9 +24,5 @@ public class CalculatorDemo {
         Calculator c1 = new Calculator();
         c1.setOprands(10, 0);
         c1.divide();
-
-        Calculator c2 = new Calculator();
-        c2.setOprands(10, 5);
-        c2.divide();
     }
 }
