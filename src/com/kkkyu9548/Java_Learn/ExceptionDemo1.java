@@ -15,6 +15,6 @@ class A{
 public class ExceptionDemo1 {
     public static void main(String[] args) {
         A a = new A();
-        a.z(10, 1);
+        a.z(1, 0);
     }
 }
