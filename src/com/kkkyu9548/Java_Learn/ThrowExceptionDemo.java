@@ -1,7 +1,21 @@
 package com.kkkyu9548.Java_Learn;
 
+import java.io.*;
 class B{
     void run(){
+        BufferedReader bReader = null;
+        String input = null;
+        try {
+            bReader = new BufferedReader(new FileReader("out.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try{
+            input = bReader.readLine();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+        System.out.println(input);
     }
 }
 class C{
