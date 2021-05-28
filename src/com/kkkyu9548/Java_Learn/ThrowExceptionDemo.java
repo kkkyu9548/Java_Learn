@@ -2,19 +2,11 @@ package com.kkkyu9548.Java_Learn;
 
 import java.io.*;
 class B{
-    void run(){
+    void run() throws IOException, FileNotFoundException{
         BufferedReader bReader = null;
         String input = null;
-        try {
-            bReader = new BufferedReader(new FileReader("out.txt"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        try{
-            input = bReader.readLine();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
+        bReader = new BufferedReader(new FileReader("out.txt"));
+        input = bReader.readLine();
         System.out.println(input);
     }
 }
