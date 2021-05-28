@@ -8,7 +8,11 @@ public class CheckedExceptionDemo {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        String input = bReader.readLine();
+        try{
+            String input = bReader.readLine();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
         System.out.println(input);
     }
 }
