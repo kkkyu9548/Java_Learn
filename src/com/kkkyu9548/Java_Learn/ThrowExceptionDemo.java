@@ -13,7 +13,13 @@ class B{
 class C{
     void run(){
         B b = new B();
-        b.run();
+        try {
+            b.run();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 public class ThrowExceptionDemo {
