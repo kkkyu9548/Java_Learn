@@ -1,4 +1,5 @@
 package com.kkkyu9548.Java_Learn;
+import java.io.IOException;
 
 class Calculator{
     int left, right;
@@ -30,8 +31,12 @@ public class CalculatorDemo {
     }
 }
 
+
 class E{
     void throwArithmeticException(){
         throw new ArithmeticException();
+    }
+    void throwIOException(){
+        throw new IOException();
     }
 }
