@@ -29,3 +29,9 @@ public class CalculatorDemo {
         c1.divide();
     }
 }
+
+class E{
+    void throwArithmeticException(){
+        throw new ArithmeticException();
+    }
+}
