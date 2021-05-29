@@ -3,13 +3,13 @@ package com.kkkyu9548.Java_Learn;
 class Calculator{
     int left, right;
     public void setOprands(int left, int right){
-        if(right == 0){
-            throw new IllegalArgumentException("두번째 인자의 값은 0이 될 수 없습니다.");
-        }
         this.left = left;
         this.right = right;
     }
     public void divide(){
+        if(this.right == 0){
+            throw new ArithmeticException("0으로 나누는 것은 허용되지 않습니다.");
+        }
         try {
             System.out.print("계산결과는 ");
             System.out.print(this.left/this.right);
