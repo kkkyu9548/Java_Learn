@@ -1,7 +1,5 @@
 package com.kkkyu9548.Java_Learn;
 
-package org.opentutorials.javatutorials.exception;
-
 class DivideException extends Exception {
     DivideException(){
         super();
