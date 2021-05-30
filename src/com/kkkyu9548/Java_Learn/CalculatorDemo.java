@@ -1,6 +1,8 @@
 package com.kkkyu9548.Java_Learn;
 
-class DivideException extends RuntimeException {
+package org.opentutorials.javatutorials.exception;
+
+class DivideException extends Exception {
     DivideException(){
         super();
     }
@@ -14,7 +16,7 @@ class Calculator{
         this.left = left;
         this.right = right;
     }
-    public void divide(){
+    public void divide() throws DivideException{
         if(this.right == 0){
             throw new DivideException("0으로 나누는 것은 허용되지 않습니다.");
         }
@@ -25,6 +27,10 @@ public class CalculatorDemo {
     public static void main(String[] args) {
         Calculator c1 = new Calculator();
         c1.setOprands(10, 0);
-        c1.divide();
+        try {
+            c1.divide();
+        } catch (DivideException e) {
+            e.printStackTrace();
+        }
     }
 }
