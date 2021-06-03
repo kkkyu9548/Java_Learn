@@ -1,9 +1,9 @@
 package com.kkkyu9548.Java_Learn;
 
-abstract class Info{
-    public abstract int getLevel();
+interface Info{
+    int getLevel();
 }
-class EmployeeInfo extends Info{
+class EmployeeInfo implements Info{
     public int rank;
     EmployeeInfo(int rank){ this.rank = rank; }
     public int getLevel(){
